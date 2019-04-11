@@ -1,0 +1,16 @@
+{
+  "name": "@percy/script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Perceptual Inc.",
+  "dependencies": {
+    "@percy/puppeteer": "^1.0.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "percy exec -- node ./example.js"
+  }
+}
