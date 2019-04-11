@@ -4,6 +4,22 @@
 
 PercyScript is the easiest way to get started with visual testing and [Percy](https://percy.io).
 
+A small example of what PercyScript looks like:
+
+``` javascript
+const PercyScript = require('@percy/script');
+
+PercyScript.run(async (page, percySnapshot) => {
+  await page.goto('http://localhost8080/');
+  await page.waitFor(2000);
+  await percySnapshot('Home page');
+
+  await page.goto('http://localhost8080/about');
+  await page.waitFor(2000);
+  await percySnapshot('About);
+});
+```
+
 ## Resources
 
 * [Setup docs](https://docs.percy.io/docs/percyscript)
