@@ -1,9 +1,13 @@
 const puppeteer = require("puppeteer");
 const { percySnapshot } = require("@percy/puppeteer");
+const platform = require("os").platform();
+const isWindows = /^win/.test(platform);
 
 const defaultOptions = {
   headless: true,
-  args: ["--no-sandbox", "--disable-setuid-sandbox", "--single-process"]
+  args: isWindows
+    ? []
+    : ["--no-sandbox", "--disable-setuid-sandbox", "--single-process"]
 };
 
 const PercyScript = {
