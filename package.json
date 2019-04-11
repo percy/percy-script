@@ -1,9 +1,12 @@
 {
   "name": "@percy/script",
   "version": "1.0.0",
+  "description": "PercyScript is the easiest way to get started with visual testing and Percy.",
   "main": "index.js",
   "license": "MIT",
   "author": "Perceptual Inc.",
+  "private": false,
+  "repository": "git@github.com:percy/percy-script.git",
   "files": [
     "index.js",
     "README.md",
