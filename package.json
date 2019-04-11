@@ -11,6 +11,6 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "percy exec -- node ./example.js"
+    "test": "percy exec -- node ./test/index.js"
   }
 }
