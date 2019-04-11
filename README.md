@@ -6,7 +6,7 @@ PercyScript is the easiest way to get started with visual testing and [Percy](ht
 
 A small example of what PercyScript looks like:
 
-``` javascript
+```javascript
 const PercyScript = require('@percy/script');
 
 PercyScript.run(async (page, percySnapshot) => {
@@ -16,7 +16,7 @@ PercyScript.run(async (page, percySnapshot) => {
 
   await page.goto('http://localhost8080/about');
   await page.waitFor(2000);
-  await percySnapshot('About);
+  await percySnapshot('About');
 });
 ```
 
