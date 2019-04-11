@@ -4,6 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Perceptual Inc.",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@percy/puppeteer": "^1.0.7"
   },
