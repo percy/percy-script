@@ -8,4 +8,6 @@ PercyScript is the easiest way to get started with visual testing and [Percy](ht
 
 ## Resources
 
-* [Documentation](https://docs.percy.io/docs/percyscript)
+* [Setup and integration docs](https://docs.percy.io/docs/percyscript)
+* [Tutorial](https://docs.percy.io/docs/percyscript-tutorial)
+* [Example integration](https://github.com/percy/example-percyscript)
