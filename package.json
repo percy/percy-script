@@ -5,7 +5,6 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Perceptual Inc.",
-  "private": false,
   "repository": "git@github.com:percy/percy-script.git",
   "files": [
     "index.js",
@@ -13,10 +12,10 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@percy/puppeteer": "^1.0.7"
+    "@percy/puppeteer": "^1.0.8"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8.2.0"
   },
   "scripts": {
     "test": "percy exec -- node ./test/index.js"
