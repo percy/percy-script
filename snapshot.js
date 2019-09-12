@@ -1,6 +1,6 @@
-let pkg = require("./package.json");
-let puppeteerPkg = require("puppeteer/package.json");
-let {
+const pkg = require("./package.json");
+const puppeteerPkg = require("puppeteer/package.json");
+const {
   agentJsFilename,
   isAgentRunning,
   postSnapshot
@@ -36,7 +36,7 @@ module.exports = async function percySnapshot(page, name, options) {
   }
 
   let domSnapshot = await page.evaluate(function(name, options) {
-    var percyAgentClient = new PercyAgent({ handleAgentCommunication: false });
+    let percyAgentClient = new PercyAgent({ handleAgentCommunication: false });
 
     return percyAgentClient.snapshot("not used");
   });
