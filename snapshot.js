@@ -1,5 +1,5 @@
 let pkg = require("./package.json");
-let puppeteerrPkg = require("puppeteer/package.json");
+let puppeteerPkg = require("puppeteer/package.json");
 let {
   agentJsFilename,
   isAgentRunning,
@@ -7,7 +7,7 @@ let {
 } = require("@percy/agent/dist/utils/sdk-utils");
 
 const CLIENT_INFO = `${pkg.name}/${pkg.version}`;
-const ENV_INFO = `${puppeteerrPkg.name}/${puppeteerrPkg.version}`;
+const ENV_INFO = `${puppeteerPkg.name}/${puppeteerPkg.version}`;
 
 module.exports = async function percySnapshot(page, name, options) {
   if (!page) {
