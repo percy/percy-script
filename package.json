@@ -1,6 +1,6 @@
 {
   "name": "@percy/script",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PercyScript is the easiest way to get started with visual testing and Percy.",
   "main": "index.js",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@percy/puppeteer": "^1.0.8"
+    "@percy/agent": "~0"
   },
   "engines": {
     "node": ">=8.2.0"

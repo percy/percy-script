@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
-const { percySnapshot } = require("@percy/puppeteer");
 const platform = require("os").platform();
 const isWindows = /^win/.test(platform);
+const percySnapshot = require("./snapshot.js");
 
 const defaultOptions = {
   headless: true,
