@@ -22,6 +22,10 @@ PercyScript.run(async (page, percySnapshot) => {
     widths
   });
 
+  await percySnapshot("Percy SDK test page [with percy CSS]", {
+    percyCSS: `body { background-color: purple; }`
+  });
+
   await page.goto("http://example.com/");
   await page.waitFor("h1");
   await percySnapshot("HTTP live site [with snapshot options]", { widths });
