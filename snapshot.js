@@ -38,7 +38,7 @@ module.exports = async function percySnapshot(page, name, options) {
   let domSnapshot = await page.evaluate(function(name, options) {
     let percyAgentClient = new PercyAgent({ handleAgentCommunication: false });
 
-    return percyAgentClient.snapshot("not used");
+    return percyAgentClient.snapshot(name, options);
   });
 
   await postDomSnapshot(name, domSnapshot, page.url(), options);
