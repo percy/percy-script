@@ -25,8 +25,6 @@ const PercyScript = {
 
     try {
       await runFn(page, snapshot);
-    } catch (error) {
-      console.error(error);
     } finally {
       await browser.close();
     }
