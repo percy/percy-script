@@ -1,13 +1,11 @@
-const puppeteer = require("puppeteer");
-const platform = require("os").platform();
+const puppeteer = require('puppeteer');
+const platform = require('os').platform();
 const isWindows = /^win/.test(platform);
-const percySnapshot = require("./snapshot.js");
+const percySnapshot = require('./snapshot.js');
 
 const defaultOptions = {
   headless: true,
-  args: isWindows
-    ? []
-    : ["--no-sandbox", "--disable-setuid-sandbox", "--single-process"]
+  args: isWindows ? [] : ['--no-sandbox', '--disable-setuid-sandbox', '--single-process']
 };
 
 const PercyScript = {
@@ -25,6 +23,9 @@ const PercyScript = {
 
     try {
       await runFn(page, snapshot);
+    } catch (error) {
+      console.error(error);
+      process.exit(1);
     } finally {
       await browser.close();
     }
