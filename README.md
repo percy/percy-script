@@ -1,3 +1,5 @@
+⚠️ PercyScript has been deprecated in favor of Percy CLI's snapshot command: https://docs.percy.io/docs/percy-snapshot Please upgrade to use the CLI rather than this package, as it's no longer actively supported.
+
 # @percy/script
 [![Package Status](https://img.shields.io/npm/v/@percy/script.svg)](https://www.npmjs.com/package/@percy/script)
 [![CircleCI](https://circleci.com/gh/percy/percy-script/tree/master.svg?style=svg)](https://circleci.com/gh/percy/percy-script/tree/master)
